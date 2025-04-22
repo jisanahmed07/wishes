@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            color: #333;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 500px;
+            margin: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        h1 {
+            color: #ff6b6b;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .balloons {
+            font-size: 3rem;
+            margin: 20px 0;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .quote {
+            font-style: italic;
+            margin: 25px 0;
+            padding: 15px;
+            border-left: 4px solid #ff6b6b;
+            background-color: #fff9f9;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .signature {
+            font-weight: bold;
+            margin-top: 30px;
+            color: #ff6b6b;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        @media (max-width: 600px) {
+            .card {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="balloons">🎈🎉🎂</div>
+        <h1>Happy Birthday!</h1>
+        <p>Wishing you a day filled with joy, laughter, and wonderful moments!</p>
+        
+        <div class="quote">
+            "Life is not measured by the number of breaths we take, but by the moments that take our breath away."
+        </div>
+        
+        <div class="quote">
+            "The secret of life is to fall seven times and to get up eight times." <br>
+            - Paulo Coelho
+        </div>
+        
+        <div class="quote">
+            "Happiness is not something ready-made. It comes from your own actions." <br>
+            - Dalai Lama
+        </div>
+        
+        <div class="signature">
+            With love,<br>
+            [JISAN]
+        </div>
+    </div>
+</body>
+</html>
